@@ -1,0 +1,57 @@
+CREATE DATABASE EventEas3;
+GO
+
+USE EventEas3;
+GO
+
+
+CREATE TABLE _Venue
+(
+	VenueID INT PRIMARY KEY IDENTITY(1,1),
+
+	vLocation VARCHAR(100) NOT NULL,
+	vName VARCHAR(100) NOT NULL,
+	vAddress VARCHAR(200) NOT NULL,
+	vImage VARCHAR(255)
+);
+GO
+
+CREATE TABLE Eventie
+(
+	EventID INT PRIMARY KEY IDENTITY(1,1),
+
+	eDateTime DATETIME NOT NULL,
+	eType VARCHAR(50) NOT NULL,
+	eDuration INT NOT NULL,  -- duration in minutes/hours
+	eLimit INT NOT NULL  -- attendee limit
+);
+GO
+
+CREATE TABLE Booking
+(
+	BookingID INT PRIMARY KEY IDENTITY(1,1),
+
+	bDate DATE NOT NULL,
+	bTime TIME NOT NULL,
+	bName VARCHAR(100) NOT NULL
+);
+GO
+
+CREATE TABLE EventEaser
+(
+	EventEaserID INT PRIMARY KEY IDENTITY(1,1),
+
+	EventID INT NOT NULL,
+	VenueID INT NOT NULL,
+	BookingID INT NOT NULL,
+
+	FOREIGN KEY (EventID)
+	REFERENCES Eventie(EventID),
+
+	FOREIGN KEY (VenueID)
+	REFERENCES Venue(VenueID),
+
+	FOREIGN KEY (BookingID)
+	REFERENCES Booking(BookingID)
+);
+GO
