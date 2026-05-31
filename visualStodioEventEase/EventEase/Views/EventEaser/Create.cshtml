@@ -1,0 +1,53 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model EventEas3.Models.EventEaser
+
+@{
+    ViewData["Title"] = "Create EventEaser Link";
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-6 my-4">
+        <h2>Schedule Logistics Assignment</h2>
+        <p class="text-muted">Assign an event to a specific venue and attach a booking entry.</p>
+
+        <div class="card p-4 shadow-sm border-top border-primary border-4">
+            <form asp-action="Create">
+                <!-- Important: The custom model-only errors (Capacity & Conflicts) print here -->
+                <div asp-validation-summary="ModelOnly" class="alert alert-danger @(ViewData.ModelState.IsValid ? "d-none" : "") mb-3"></div>
+
+                <div class="mb-3">
+                    <label class="form-label font-weight-bold">Select Event Profile (Template)</label>
+                    <select asp-for="EventID" class="form-select" asp-items="ViewBag.EventID">
+                        <option value="">-- Choose Event --</option>
+                    </select>
+                    <span asp-validation-for="EventID" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label font-weight-bold">Select Destination Venue</label>
+                    <select asp-for="VenueID" class="form-select" asp-items="ViewBag.VenueID">
+                        <option value="">-- Choose Venue --</option>
+                    </select>
+                    <span asp-validation-for="VenueID" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label font-weight-bold">Attach Client Booking Record</label>
+                    <select asp-for="BookingID" class="form-select" asp-items="ViewBag.BookingID">
+                        <option value="">-- Choose Booking Slot --</option>
+                    </select>
+                    <span asp-validation-for="BookingID" class="text-danger"></span>
+                </div>
+
+                <div class="d-flex justify-content-between mt-4">
+                    <a asp-action="Index" class="btn btn-secondary">Back to Schedule Map</a>
+                    <button type="submit" class="btn btn-primary px-4">Validate & Process</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

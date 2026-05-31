@@ -1,0 +1,50 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model EventEas3.Models.Eventie
+
+@{
+    ViewData["Title"] = "Create Event";
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-6 my-4">
+        <h2>Create Event</h2>
+        <div class="card p-4 shadow-sm">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                <div class="mb-3">
+                    <label asp-for="eType" class="form-label">Event Type</label>
+                    <input asp-for="eType" class="form-control" placeholder="e.g., Doctor, Concert, Party" />
+                    <span asp-validation-for="eType" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="eDateTime" class="form-label">Date & Time</label>
+                    <input asp-for="eDateTime" type="datetime-local" class="form-control" />
+                    <span asp-validation-for="eDateTime" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="eDuration" class="form-label">Duration (Minutes)</label>
+                    <input asp-for="eDuration" type="number" class="form-control" min="1" />
+                    <span asp-validation-for="eDuration" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="eLimit" class="form-label">Attendee Capacity Limit</label>
+                    <input asp-for="eLimit" type="number" class="form-control" min="1" />
+                    <span asp-validation-for="eLimit" class="text-danger"></span>
+                </div>
+
+                <div class="d-flex justify-content-between">
+                    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+                    <button type="submit" class="btn btn-success">Save Event</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

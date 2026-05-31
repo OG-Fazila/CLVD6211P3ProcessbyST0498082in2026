@@ -1,0 +1,50 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model EventEas3.Models._Venue
+
+@{
+    ViewData["Title"] = "Create Venue";
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-6 my-4">
+        <h2 class="mb-3">Create Venue</h2>
+        <div class="card p-4 shadow-sm">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                <div class="mb-3">
+                    <label asp-for="vName" class="form-label">Venue Name</label>
+                    <input asp-for="vName" class="form-line form-control" />
+                    <span asp-validation-for="vName" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="vLocation" class="form-label">Location (City/State)</label>
+                    <input asp-for="vLocation" class="form-control" />
+                    <span asp-validation-for="vLocation" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="vAddress" class="form-label">Full Address</label>
+                    <input asp-for="vAddress" class="form-control" />
+                    <span asp-validation-for="vAddress" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="vImage" class="form-label">Image URL (Optional)</label>
+                    <input asp-for="vImage" class="form-control" placeholder="e.g., venue.jpg" />
+                    <span asp-validation-for="vImage" class="text-danger"></span>
+                </div>
+
+                <div class="d-flex justify-content-between">
+                    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+                    <button type="submit" class="btn btn-success">Save Venue</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

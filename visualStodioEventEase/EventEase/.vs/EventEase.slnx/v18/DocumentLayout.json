@@ -1,12 +1,54 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Documents\\Studies at Emeris\\2026\\S1 CLDV6211 Cloud Development A\\CLDV6211 POE3\\visualStodioEventEase\\EventEase\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2E2C03B8-4821-BD83-A1E3-CFD21491410A}|EventEas3.csproj|c:\\users\\lab_services_student\\onedrive - advtech ltd\\documents\\studies at emeris\\2026\\s1 cldv6211 cloud development a\\cldv6211 poe3\\visualstodioeventease\\eventease\\models\\eventeas3context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E2C03B8-4821-BD83-A1E3-CFD21491410A}|EventEas3.csproj|solutionrelative:models\\eventeas3context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E2C03B8-4821-BD83-A1E3-CFD21491410A}|EventEas3.csproj|c:\\users\\lab_services_student\\onedrive - advtech ltd\\documents\\studies at emeris\\2026\\s1 cldv6211 cloud development a\\cldv6211 poe3\\visualstodioeventease\\eventease\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E2C03B8-4821-BD83-A1E3-CFD21491410A}|EventEas3.csproj|solutionrelative:controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EventEas3Context.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Documents\\Studies at Emeris\\2026\\S1 CLDV6211 Cloud Development A\\CLDV6211 POE3\\visualStodioEventEase\\EventEase\\Models\\EventEas3Context.cs",
+              "RelativeDocumentMoniker": "Models\\EventEas3Context.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Documents\\Studies at Emeris\\2026\\S1 CLDV6211 Cloud Development A\\CLDV6211 POE3\\visualStodioEventEase\\EventEase\\Models\\EventEas3Context.cs",
+              "RelativeToolTip": "Models\\EventEas3Context.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAAABIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T22:18:29.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BookingController.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Documents\\Studies at Emeris\\2026\\S1 CLDV6211 Cloud Development A\\CLDV6211 POE3\\visualStodioEventEase\\EventEase\\Controllers\\BookingController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BookingController.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Documents\\Studies at Emeris\\2026\\S1 CLDV6211 Cloud Development A\\CLDV6211 POE3\\visualStodioEventEase\\EventEase\\Controllers\\BookingController.cs",
+              "RelativeToolTip": "Controllers\\BookingController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T22:18:00.947Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

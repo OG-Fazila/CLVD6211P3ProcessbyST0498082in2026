@@ -1,0 +1,37 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model IEnumerable<EventEas3.Models.EventEaser>
+
+@{
+    ViewData["Title"] = "Scheduled Deployments (EventEaser)";
+}
+
+<div class="d-flex justify-content-between align-items-center my-4">
+    <h2>Event Logistics Matrix (EventEaser)</h2>
+    <a asp-action="Create" class="btn btn-success">Schedule New Link</a>
+</div>
+
+<table class="table table-hover table-bordered shadow-sm">
+    <thead class="table-primary">
+        <tr>
+            <th>Event Details (Type)</th>
+            <th>Venue Assignment</th>
+            <th>Booking Reference (Client)</th>
+            <th>Execution Schedule</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td><span class="badge bg-dark p-2 text-uppercase">@item.Eventie?.eType</span></td>
+                <td>@item._Venue?.vName <br /><small class="text-muted">@item._Venue?.vAddress</small></td>
+                <td><strong>@item.Booking?.bName</strong></td>
+                <td>@item.Booking?.bDate.ToString("yyyy-MM-dd") at @item.Booking?.bTime.ToString(@"hh\:mm")</td>
+            </tr>
+        }
+    </tbody>
+</table>
